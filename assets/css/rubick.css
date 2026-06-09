@@ -2480,36 +2480,14 @@ a.carousel-control span.fa {
 }
 .section-we-are-1 #carousel .carousel-inner,
 .section-we-are-1 #carousel .item {
-  height: 560px;
+  height: 620px;
 }
-.section-we-are-1 #carousel .item {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
-.section-we-are-1 #carousel .item:before {
-  background: inherit;
-  content: "";
-  display: block;
-  filter: blur(16px);
-  height: calc(100% + 40px);
-  left: -20px;
-  opacity: .35;
-  position: absolute;
-  top: -20px;
-  width: calc(100% + 40px);
-}
-.section-we-are-1 #carousel img.carousel-photo {
+.section-we-are-1 #carousel img.full-image {
   display: block;
   height: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: center;
-  position: relative;
-  width: auto;
-  z-index: 1;
+  object-fit: cover;
+  object-position: center 22%;
+  width: 100%;
 }
 
 .section-we-are-2 {
@@ -3345,13 +3323,17 @@ body.noscroll {
 @media (max-width: 991px) {
   .section-we-are-1 #carousel .carousel-inner,
   .section-we-are-1 #carousel .item {
-    height: 460px;
+    height: 500px;
   }
 }
 @media (max-width: 767px) {
   .section-we-are-1 #carousel .carousel-inner,
   .section-we-are-1 #carousel .item {
     height: 320px;
+  }
+  .section-we-are-1 #carousel img.full-image {
+    object-fit: contain;
+    object-position: center;
   }
   .section-team-2 .lawyer-gallery .lawyer-photo {
     margin-bottom: 20px;
