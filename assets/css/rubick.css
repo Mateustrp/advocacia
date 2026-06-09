@@ -2468,7 +2468,26 @@ a.carousel-control span.fa {
   color: #777777;
 }
 .section-we-are-1 #carousel .carousel-inner {
-  max-height: 400px;
+  background: #f7f7f7;
+  max-height: none;
+}
+.section-we-are-1 #carousel .carousel {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.section-we-are-1 #carousel .carousel-inner:after {
+  display: none;
+}
+.section-we-are-1 #carousel .carousel-inner,
+.section-we-are-1 #carousel .item {
+  height: 620px;
+}
+.section-we-are-1 #carousel img.full-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  width: 100%;
 }
 
 .section-we-are-2 {
@@ -3283,6 +3302,45 @@ body.noscroll {
 .section-team-2 .team .description {
   padding: 10px 0;
   text-align: center;
+}
+.section-team-2 .lawyer-gallery {
+  margin-top: 10px;
+}
+.section-team-2 .lawyer-gallery .lawyer-photo {
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.section-team-2 .lawyer-gallery .lawyer-photo img {
+  border: 3px solid #c5a47e;
+  display: block;
+  height: 380px;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .section-we-are-1 #carousel .carousel-inner,
+  .section-we-are-1 #carousel .item {
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .section-we-are-1 #carousel .carousel-inner,
+  .section-we-are-1 #carousel .item {
+    height: 320px;
+  }
+  .section-we-are-1 #carousel img.full-image {
+    object-fit: contain;
+    object-position: center;
+  }
+  .section-team-2 .lawyer-gallery .lawyer-photo {
+    margin-bottom: 20px;
+  }
+  .section-team-2 .lawyer-gallery .lawyer-photo img {
+    height: 420px;
+  }
 }
 
 .section-team-3 .team {
