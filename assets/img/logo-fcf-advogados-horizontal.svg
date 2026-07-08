@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 64" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">FCF Advogados</title>
+  <g fill="none" stroke="#0F2F36" stroke-linecap="round" stroke-linejoin="round" stroke-width="14">
+    <path d="M62 12H32C18.5 12 9 21.5 9 32s9.5 20 23 20h22" />
+    <path d="M35 32h25" />
+  </g>
+  <g fill="#111111" font-family="Inter, Montserrat, Arial, sans-serif">
+    <text x="84" y="40" font-size="22" font-weight="800" letter-spacing="12">FCF</text>
+    <text x="172" y="40" font-size="16" font-weight="400" letter-spacing="7.4">ADVOGADOS</text>
+  </g>
+</svg>
