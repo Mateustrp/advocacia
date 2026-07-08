@@ -2334,14 +2334,16 @@ a,
 }
 
 a.scroll-arrow {
-  font-size: 35px;
+  align-items: center;
   color: white;
+  display: flex;
+  font-size: 29px;
   width: 50px;
-  line-height: 52px;
+  justify-content: center;
+  line-height: 1;
   border-radius: 50%;
   height: 50px;
   border: 1px solid white;
-  display: block;
   margin: 0 auto;
   position: absolute;
   bottom: 40px;
@@ -2354,8 +2356,11 @@ a.scroll-arrow {
   transform: translateX(-50%);
   opacity: .9;
 }
-a.scroll-arrow i {
-  width: 100%;
+a.scroll-arrow i,
+a.scroll-arrow span {
+  display: block;
+  line-height: 1;
+  transform: translateY(-1px);
 }
 a.scroll-arrow i:hover, a.scroll-arrow i:focus {
   color: white;
@@ -4172,8 +4177,8 @@ a:focus {
 
 .fcf-hero-overlay {
   background:
-    linear-gradient(90deg, rgba(15, 47, 54, 0.94) 0%, rgba(20, 58, 66, 0.76) 44%, rgba(17, 17, 17, 0.24) 100%),
-    linear-gradient(180deg, rgba(17, 17, 17, 0.14) 0%, rgba(17, 17, 17, 0.30) 100%);
+    linear-gradient(90deg, rgba(15, 47, 54, 0.82) 0%, rgba(20, 58, 66, 0.56) 44%, rgba(17, 17, 17, 0.16) 100%),
+    linear-gradient(180deg, rgba(17, 17, 17, 0.08) 0%, rgba(17, 17, 17, 0.20) 100%);
   height: 100%;
   left: 0;
   position: absolute;
